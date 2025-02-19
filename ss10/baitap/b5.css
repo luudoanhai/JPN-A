@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 800px;
+    background: #d4d4d4;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post {
+    display: flex;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.post img {
+    width: 120px;
+    height: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.post-content {
+    margin-left: 15px;
+}
+
+.post-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.post-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+}
+
+.badge {
+    background: #1e3a8a;
+    color: white;
+    padding: 3px 8px;
+    font-size: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.category {
+    color: #555;
+    font-size: 14px;
+}
+
+.post-desc {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.divider {
+    margin: 15px 0;
+    border-top: 1px solid #ccc;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #555;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}

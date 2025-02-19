@@ -1,0 +1,23 @@
+.p1{
+    background-color: deepskyblue;
+    height:30px;
+    padding-top:1px;
+}
+.p2{
+    display: flex;
+}
+.list1{
+    background-color: greenyellow;
+    flex-grow: 0.3;
+    height:150px;
+    margin-right: 5px;
+}
+.list2{
+    background-color: brown;
+    flex-grow: 1;
+}
+.p3{
+    background-color: blueviolet;
+    height:30px;
+    margin-bottom: 2px;
+}

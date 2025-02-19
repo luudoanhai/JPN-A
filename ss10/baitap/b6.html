@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Ảnh</title>
+    <link rel="stylesheet" href="./b6.css">
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide active">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJ8zcO06uuiFsdG7sQxu8yt-lXXhzDGjUsRoUldWyngu_xwsFK">
+                <div class="overlay">
+                    <span class="tag">Football</span>
+                    <p class="date">Agence France-Presse - 04 June 2023</p>
+                    <h2>LIONEL MESSI LEAVING LIGUE 1 TEAM PARIS SAINT-GERMAIN, CLUB CONFIRMS</h2>
+                    <p class="desc">The EuroLeague Finals Top Scorer is the individual award for the player that gained the highest points in the EuroLeague Finals.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="image2.jpg" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="image3.jpg" alt="Slide 3">
+            </div>
+            <div class="slide">
+                <img src="image4.jpg" alt="Slide 4">
+            </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#8592;</button>
+        <button class="next" onclick="moveSlide(1)">&#8594;</button>
+        <div class="dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
