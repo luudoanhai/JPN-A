@@ -3,89 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./hackathon.css">
-    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
 </head>
-<body>
-    <nav>
-        <div class="logo"><SS>></div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#" class="cv-btn">Download CV</a></li>
-        </ul>
-    </nav>
-    <header>
-        <div class="header-content">
-            <h1>Hi, I'm Sagar 👋</h1>
-            <p>I'm a full stack developer (React.js & Node.js) with a focus on creating (and occasionally designing) exceptional digital experiences that are fast, accessible, visually appealing, and responsive. Even though I have been creating web applications for over 7 years, I still love it as if it was something new.</p>
-            <p><strong>🌍 Ahmedabad, India</strong></p>
-            <p><strong>🛠 Available for new projects</strong></p>
-        </div>
-        <div class="profile-image">
-            <img src="sagar-profile.jpg" alt="Sagar's Profile">
-        </div>
+<body class="font-roboto bg-white text-black">
+    <header class="flex justify-between items-center p-6">
+        <div class="text-xl font-bold"><img src="./logo 1.png" alt="">Personal</div>
+        <nav class="space-x-6">
+            <a class="hover:underline" href="#">About Me</a>
+            <a class="hover:underline" href="#">Skills</a>
+            <a class="hover:underline" href="#">Project</a>
+            <a class="hover:underline" href="#">Contact Me</a>
+        </nav>
+        <button class="resume-button">
+            <span>Resume</span>
+            <i class="fas fa-download ml-2"></i>
+        </button>
     </header>
-
-    <section class="skills">
-        <h2>Skills</h2>
-        <p>The skills, tools and technologies I am really good at:</p>
-        <div class="skill-logos">
-            <div class="skill-item">
-                <img src="javascript-logo.png" alt="JavaScript">
-                <span>JavaScript</span>
-            </div>
-            <div class="skill-item">
-                <img src="typescript-logo.png" alt="TypeScript">
-                <span>TypeScript</span>
-            </div>
-            <div class="skill-item">
-                <img src="react-logo.png" alt="React">
-                <span>React</span>
-            </div>
-            <div class="skill-item">
-                <img src="nextjs-logo.png" alt="Next.js">
-                <span>Next.js</span>
-            </div>
-            <div class="skill-item">
-                <img src="nodejs-logo.png" alt="Node.js">
-                <span>Node.js</span>
-            </div>
-            <div class="skill-item">
-                <img src="expressjs-logo.png" alt="Express.js">
-                <span>Express.js</span>
-            </div>
-            <div class="skill-item">
-                <img src="nestjs-logo.png" alt="Nest.js">
-                <span>Nest.js</span>
-            </div>
-            <div class="skill-item">
-                <img src="socketio-logo.png" alt="Socket.io">
-                <span>Socket.io</span>
-            </div>
-        </div>
-    </section>
-
-    <section class="work">
-        <h2>Work</h2>
-        <p>Some of the noteworthy projects I have built:</p>
-        <div class="project-grid">
-            <div class="project-card">
-                <img src="project1.jpg" alt="Project 1">
-                <h3>Fiskil</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus voluptat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
-                <div class="tech-stack">
-                    <span>React</span>
-                    <span>Next.js</span>
-                    <span>TypeScript</span>
-                    <span>Nest.js</span>
-                    <span>Figma</span>
+    <main class="max-w-6xl mx-auto p-6">
+        <section class="flex flex-col md:flex-row items-center md:space-x-12">
+            <div class="flex-1">
+                <h1 class="title">
+                    Hello I'm <span class="highlight">Evren Shah.</span><br>
+                    Frontend <span class="highlight">Developer</span><br>
+                    Based In <span class="highlight">India.</span>
+                </h1>
+                <p class="description">I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.</p>
+                <div class="social-links">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
+            <div class="flex-1 mt-12 md:mt-0">
+                <img src="./Banner (2).png" alt="" class="profile-image">
+            </div>
+        </section>
+        <section class="skills">
+            <h2 class="text-3xl font-bold text-center">My <span class="highlight">Skills</span></h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="./Skills.png" alt="">
+                </div>
+                <div class="skill-item dark">
+                    <img src="./Skills (1).png" alt="">  
+                </div>
+                <div class="skill-item">
+                    <img src="./Skills (2).png" alt=""> 
+                </div>
+                <div class="skill-item">
+                    <img src="./Skills (3).png" alt="">  
+                </div>
+                <div class="skill-item">
+                    <img src="./Skills (4).png" alt="">
+                </div>
+                <div class="skill-item">
+                    <img src="./Skills (5).png" alt="">
+                </div>
+                <div class="skill-item">
+                    <img src="./Skills.png" alt="">
+                </div>
+                <div class="skill-item">
+                    <img src="./Skills (4).png" alt="">
+                </div>
+                <div class="skill-item">
+                    <img src="./Skills (6).png" alt="">
+                </div>
+                <div class="skill-item">
+                    <img src="./Skills (2).png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="experience">
+        <h2 class="section-title">My <span class="highlight">Experience</span></h2>
+        
+        <div class="experience-card">
+            <div class="experience-header">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo" class="company-logo">
+                <h3>Lead Software Engineer at Google</h3>
+                <span class="date">Nov 2019 - Present</span>
+            </div>
+            <p>As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google's core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide.</p>
+        </div>
+    
+        <div class="experience-card dark">
+            <div class="experience-header">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo" class="company-logo">
+                <h3>Software Engineer at YouTube</h3>
+                <span class="date">Jan 2017 - Oct 2019</span>
+            </div>
+            <p>At Youtube, I served as a  Software Engineer, focusing on the design and implementation of backend systems for the social media giant's dynamic platform. Working on projects that involved large-scale data processing and user engagement features, I leveraged my expertise to ensure seamless functionality and scalability.</p>
+        </div>
+        <div class="experience-card">
+            <div class="experience-header">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo" class="company-logo">
+                <h3>Junior Software Engineer at Apple</h3>
+                <span class="date">Jan 2016 - Dec 2017</span>
+            </div>
+            <p>During my tenure at Apple, I held the role of Software Architect, where I played a key role in shaping the architecture of mission-critical software projects. Responsible for designing scalable and efficient systems, I provided technical leadership to a cross-functional team.</p>
         </div>
     </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="./logo 1.png" class="footer-logo">
+                <span class="footer-brand">Personal</span>
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2019-2023 Personal</p>
+                <p>Made In Figma</p>
+            </div>
+        </div>
+    </footer>    
 </body>
 </html>
