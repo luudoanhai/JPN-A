@@ -1,0 +1,12 @@
+let str1="5";
+str1 = Number(member1);
+let str2="-1";
+str2 = Number(member2);
+let str3="Hello";
+str3 = Number(member3);
+let member1=55;
+member1=member1.toString(member1);
+let member2=-10;
+member2=member2.toString(member2);
+let member3=0;
+member3=member3.toString(member3);
