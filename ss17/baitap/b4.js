@@ -1,3 +1,3 @@
-let number = +prompt("Nhap so cua ban:");
-let result = math.sqrt(number);
-console.log("Can bac hai so ban nhap la",result);
+let firstNumber =prompt("Nhập số: ");
+let sqrt = Math.sqrt(firstNumber);
+console.log(sqrt.toFixed(2));
