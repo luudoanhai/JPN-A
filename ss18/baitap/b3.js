@@ -1,18 +1,26 @@
-function kiemTraDangNhap() {
-    let username = document.getElementById("username").value.trim();
-    let password = document.getElementById("password").value.trim();
+let username = prompt("Nhập tên người dùng:");
 
-    if (username === "") {
-        document.getElementById("ketQua").innerHTML = "<span class='text-warning'>Cancelled</span>";
-    } else if (username === "ADMIN") {
-        if (password === "TheMaster") {
-            document.getElementById("ketQua").innerHTML = "<span class='text-success'>Welcome.</span>";
-        } else if (password === "") {
-            document.getElementById("ketQua").innerHTML = "<span class='text-warning'>Cancelled</span>";
-        } else {
-            document.getElementById("ketQua").innerHTML = "<span class='text-danger'>Wrong password.</span>";
-        }
+if (username === "ADMIN") {
+    let password = prompt("Nhập mật khẩu:");
+    if (password === "TheMaster") {
+        console.log("Welcome");
+        document.write("Welcome");
+        alert("Welcome");
+    } else if (password === null) {
+        console.log("Cancelled");
+        document.write("Cancelled");
+        alert("Cancelled");
     } else {
-        document.getElementById("ketQua").innerHTML = "<span class='text-danger'>I don’t know you</span>";
+        console.log("Wrong password");
+        document.write("Wrong password");
+        alert("Wrong password");
     }
+} else if (username === null) {
+    console.log("Cancelled");
+    document.write("Cancelled");
+    alert("Cancelled");
+} else {
+    console.log("I Don’t know you");
+    document.write("I Don’t know you");
+    alert("I Don’t know you");
 }
