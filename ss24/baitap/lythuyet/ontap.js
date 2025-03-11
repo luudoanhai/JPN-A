@@ -1,5 +1,5 @@
 let numbers = [1, 3, 5, 6, 8];
-/*
+/* Thêm phần tử vào đầu mảng
 numbers.unshift(0); 
 console.log(numbers); // [0, 1, 3, 5, 6, 8]
 */
