@@ -1,5 +1,4 @@
 function findMin(arr) {
-    // B1 kiểm tra xem arr có phải là mảng hay không?
     if(Array.isArray(arr)){
         if(arr.length==0){
             console.log("mảng không chứa phần tử");
@@ -10,7 +9,7 @@ function findMin(arr) {
             if(arr[i]<minItem){
                 minItem= arr[i];
             }
-            
+
         }
         console.log("giá trị nhỏ nhất",minItem);
         
