@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide/Show Text</title>
+    <style>
+        p {
+            display: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            margin: 5px;
+            border: 2px solid #333;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="text">This is a text!</p>
+    <button onclick="hideText()">Hide text</button>
+    <button onclick="showText()">Show text</button>
+
+    <script>
+        function hideText() {
+            document.getElementById("text").style.display = "none";
+        }
+
+        function showText() {
+            document.getElementById("text").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 03</title>
+    <style>
+        .container {
+            border: 1px solid black;
+            padding: 10px;
+            width: 350px;
+            background-color: white;
+        }
+        .block {
+            display: flex;
+        }
+        .blue, .red, .pink {
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            line-height: 80px;
+            font-weight: bold;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+        .blue { background-color: green; color: white; }
+        .red { background-color: red; color: white; }
+        .pink { background-color: violet; color: black; }
+    </style>
+</head>
+<body>
+    <div class="container" id="container">
+        <p>Change background-color</p>
+        <p>Mouse click</p>
+        <div class="block">
+            <div class="blue" onclick="changeColor('green')">xanh</div>
+            <div class="red" onclick="changeColor('red')">đỏ</div>
+            <div class="pink" onclick="changeColor('violet')">tím</div>
+        </div>
+    </div>
+
+    <script>
+        function changeColor(color) {
+            document.getElementById("container").style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
