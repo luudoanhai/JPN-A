@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>baitap03</title>
+    <style>
+        .container {
+            border: 1px solid black;
+        }
+        .blue {
+            background-color: lightblue;
+            text-align: center;
+            border: 1px solid black;
+        }
+        .red {
+            background-color: tomato;
+            text-align: center;
+            border: 1px solid black;
+        }
+        .pink {
+            background-color: pink;
+            text-align: center;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Change background-color</p>
+        <p>Mouse click</p>
+        <div class="block">
+            <div class="blue">BLUE</div>
+            <div class="red">RED</div>
+            <div class="pink">PINK</div>
+        </div>
+    </div>
+    <script>
+        document.getElementsByClassName("blue")[0].addEventListener("click", ()=>{
+            document.getElementsByClassName("container")[0].style.background-color("blue")
+        })
+    </script>
+</body>
+</html>
