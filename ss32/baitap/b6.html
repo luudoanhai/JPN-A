@@ -3,46 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài tập 03</title>
+    <title>baitap06</title>
     <style>
         .container {
-            border: 1px solid black;
-            padding: 10px;
-            width: 350px;
-            background-color: white;
-        }
-        .block {
-            display: flex;
-        }
-        .blue, .red, .pink {
-            width: 80px;
-            height: 80px;
+            background: white;
+            padding: 20px;
             text-align: center;
-            line-height: 80px;
-            font-weight: bold;
-            border: 1px solid black;
-            cursor: pointer;
+            width: 500px;
         }
-        .blue { background-color: green; color: white; }
-        .red { background-color: red; color: white; }
-        .pink { background-color: violet; color: black; }
+        .button {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
-    <div class="container" id="container">
-        <p>Change background-color</p>
-        <p>Mouse click</p>
-        <div class="block">
-            <div class="blue" onclick="changeColor('green')">xanh</div>
-            <div class="red" onclick="changeColor('red')">đỏ</div>
-            <div class="pink" onclick="changeColor('violet')">tím</div>
+    <div class="container">
+        <p class="text" id="text">Chữ sẽ thay đổi kích thước khi bấm nút</p>
+        <div>
+            <button class="btn btn-increase" id="increase">+</button>
+            <button class="btn btn-decrease" id="decrease">-</button>
         </div>
     </div>
-
     <script>
-        function changeColor(color) {
-            document.getElementById("container").style.backgroundColor = color;
-        }
+        let textElement = document.getElementById("text");
+        let increaseButton = document.getElementById("increase").style.backgroundColor = "red";
+        let decreaseButton = document.getElementById("decrease").style.backgroundColor = "green";
+        let fontSize = 24;
+        increaseButton.addEventListener("click", function() {
+            fontSize += 2; 
+            textElement.style.fontSize = fontSize + "px";
+        });
+        decreaseButton.addEventListener("click", function() {
+            fontSize -= 2; 
+            textElement.style.fontSize = fontSize + "px";
+        });
     </script>
 </body>
 </html>

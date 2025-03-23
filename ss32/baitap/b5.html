@@ -3,42 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>baitap03</title>
+    <title>baitap05</title>
     <style>
         .container {
-            border: 1px solid black;
-        }
-        .blue {
-            background-color: lightblue;
+            background-color: rgb(223, 217, 217);
+            height: 200px;
+            width: 400px;
             text-align: center;
             border: 1px solid black;
-        }
-        .red {
-            background-color: tomato;
-            text-align: center;
-            border: 1px solid black;
-        }
-        .pink {
-            background-color: pink;
-            text-align: center;
-            border: 1px solid black;
-        }
+        }   
     </style>
 </head>
 <body>
     <div class="container">
-        <p>Change background-color</p>
-        <p>Mouse click</p>
-        <div class="block">
-            <div class="blue">BLUE</div>
-            <div class="red">RED</div>
-            <div class="pink">PINK</div>
+        <div>
+            <h2>To-Do List K24_PTIT</h2>
+            <input type="text" id="input" placeholder="Nhập nhiệm vụ....">
+            <button id="addTask">Thêm</button>
+        </div>
+        <div>
+            <span>Học dom js</span>
+            <button>x</button>
+        </div>
+        <div>
+            <span>Làm bài tập dom js</span>
+            <button>x</button>
+        </div>
+        <div id="list">
         </div>
     </div>
     <script>
-        document.getElementsByClassName("blue")[0].addEventListener("click", ()=>{
-            document.getElementsByClassName("container")[0].style.background-color("blue")
-        })
+        document.getElementById("addTask").addEventListener("click", function() {
+            let input = document.getElementById("input");
+            let text = input.value.trim();
+            let list = document.getElementById("list");
+        });
     </script>
 </body>
 </html>
